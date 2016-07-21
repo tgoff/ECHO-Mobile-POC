@@ -1,0 +1,96 @@
+#homeScreen {
+	/* background image from http://earthdata.nasa.gov/ */
+    background: url(../images/bg-top.jpg);
+    background-repeat:repeat-y;
+    background-position:center center;
+    background-attachment:scroll;
+    background-size:100% 100%;
+}
+#homeScreen .ui-content{
+    background: transparent;
+}
+
+#homeView {
+	text-align: center;
+}
+
+#homeView .ui-controlgroup{
+	width: 70%;
+	margin: 20px auto;
+	max-width: 500px;
+}
+
+#homeView img{
+	width: 80%;
+	max-width: 600px;
+}
+
+html, body, #mapView, #mapContent, #mapDiv{
+	width: 100%;
+	height: 100%; 
+	padding: 0px;
+	margin: 0px;
+}
+
+
+/* Set up custom icons (low resolution)*/
+.ui-icon-wvc_video {
+	background-image: url("../images/icon_video.png");
+}
+
+.ui-icon-wvc_photo {
+	background-image: url("../images/icon_photo.png");
+}
+
+.ui-icon-wvc_blog {
+	background-image: url("../images/icon_blog.png");
+}
+
+/* for high resolution devices */
+@media only screen and (-webkit-min-device-pixel-ratio:2){
+	.ui-icon-wvc_video {
+		background-image: url("../images/icon_video_hr.png");
+		background-size: 18px 18px; 
+	}
+	.ui-icon-wvc_photo {
+		background-image: url("../images/icon_photo_hr.png");
+		background-size: 18px 18px; 
+	}
+	.ui-icon-wvc_blog {
+		background-image: url("../images/icon_blog_hr.png");
+		background-size: 18px 18px; 
+	}
+}
+
+.gallery { list-style: none; padding: 0; margin: 0; }
+.gallery:after { clear: both; content: "."; display: block; height: 0; visibility: hidden; }
+.gallery li { float: left; width: 33.33333333%; }
+.gallery li a { display: block; margin: 5px; border: 1px solid #3c3c3c; }
+.gallery li img { display: block; width: 100%; height: inherit; }
+#imageDisplay .ui-content { overflow: hidden; }
+#sampleGallery .ui-content { overflow: hidden; }
+
+dd, dt, dl{
+	display:block;
+}
+dd{
+	margin-left: 25px;
+}
+dt {
+	
+	text-decoration:underline;
+}
+
+#homeText{
+	color: black;
+	background-color: rgba(128,128,128,0.7);
+	border:2px solid #a1a1a1;
+	padding:10px 40px; 
+	border-radius:15px;
+	text-shadow: none;
+}
+
+#map_canvas{
+	width: 100%;
+	height: 100%;
+}
